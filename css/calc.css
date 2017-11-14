@@ -11,6 +11,12 @@ body {
     
 }
 
+body{
+
+    background-color: darkcyan;
+
+}
+
 a {
     text-decoration: none;
 }
@@ -20,12 +26,98 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #calc{
 
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
+    background-color: darkblue;
+    align-items: center;
+    justify-content:center;
+    min-height: 400px;
+    height: 96vh;
+    width: 100vw;
+    
+}
+
+#display{
+
+    width: 85%;
+    height: 10%;
+    background-color: lightsteelblue;
+    border-radius: 10px;
+    border-style: inset;
+    border-width: 5px;
+    border-color: darkcyan;
+    outline: none;
+}
+
+.button{
+
+    margin: 0 2vw;
+    width: 20%;
+    height: 10%;
+    background-color: gold;
+    border: 0;
+    box-shadow: 2px 2px 2px 2px black;
+    border-radius: 15px;
+    cursor: pointer;
+    outline: none;
+}
+
+.button:active{
+
+    box-shadow: 0;
+
+}
+
+.special2{
+
+    width: 45%;
+    
+}
+
+#footer{
+
+    background-color: black;
+    color: white;
+    min-height: 4vh;
+    font-size: 0.9em;
+    
+}
+
+#footer p{
+
+    padding: 0.6vh 0 0 1vw;
+
+}
+
+
+@media all and (min-width: 700px){
+
+
+    #calc{
+
+        margin: 10px 0;
+        width: 50vh;
+        min-height: 400px;
+        min-width: 300px;
+        max-height: 70vh;
+        border-radius: 10px;
+        padding: 2vh 2vw;
+        box-shadow: 5px 3px 3px 3px darkslategrey;
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+    }
+
+    .button{
+
+        margin: 0 0.5vw;
+
+    }
 
 
 }
