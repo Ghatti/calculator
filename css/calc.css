@@ -40,6 +40,7 @@ a {
     height: 96vh;
     width: 100vw;
     
+    
 }
 
 #display{
@@ -52,6 +53,9 @@ a {
     border-width: 5px;
     border-color: darkcyan;
     outline: none;
+    padding: 0 2vw;
+    font-weight: bold;
+    font-size: 1.3em;
 }
 
 .button{
@@ -60,11 +64,13 @@ a {
     width: 20%;
     height: 10%;
     background-color: gold;
-    border: 0;
+    border-width: 1px;
+    border-color: black;
     box-shadow: 2px 2px 2px 2px black;
     border-radius: 15px;
     cursor: pointer;
     outline: none;
+    font-weight: bold;
 }
 
 .button:active{
