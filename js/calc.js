@@ -87,15 +87,8 @@ $(document).ready(function(){
 
             var last = calc.display[calc.display.length - 1];
             
-            if(!last)
+            if(!last || last == " ")
                 return;
-            else if(last == " "){
-
-                calc.display = calc.display.slice(0, -3);
-                calc.nextOper = "";
-                calc.repeat = true;
-                $("#display").attr("value", calc.display);
-            }
             else{
                 calc.display = calc.display.slice(0, -1);
                 calc.currentNum = calc.currentNum.slice(0,-1);
